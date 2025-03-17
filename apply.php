@@ -16,24 +16,24 @@
     <fieldset>
         <legend>Job reference number</legend>
     <br>
-    <input type="text" placeholder="J97" maxlength="5" pattern="[a-zA-Z0-9]+" required="required" name="Job reference number" >
+    <input type="text" placeholder="J97" maxlength="5" pattern="[a-zA-Z0-9]+" required="required" name="Job reference number" id="job_ref" >
 </fieldset><br>
     <br>
     <fieldset>
         <legend>Name:</legend>
 <br>
-    <input type="text" placeholder=" First name" size="50" width="50"  required="required" maxlength="20" name="First Name" />   
+    <input type="text" placeholder=" First name" size="50" width="50"  required="required" maxlength="20" name="First Name" id="first_name" />   
     <br>
     <br>
     <br>
-    <input type="text" placeholder=" Last name" size="50" width="50"  required="required"  maxlength="20" name="Last name" /> 
+    <input type="text" placeholder=" Last name" size="50" width="50"  required="required"  maxlength="20" name="Last name" id="last_name"/> 
 </fieldset>
     <br>
     <br>
     <fieldset>
         <legend>Date of birth</legend>
     <br>
-    <input type="date" placeholder=" dd/mm/yyyy"  required="required" size="50" width="50" name="date"/>  
+    <input type="date" placeholder=" dd/mm/yyyy"  required="required" size="50" width="50" name="date" id="dob"/>  
 </fieldset>
     <br>
     <fieldset>
@@ -47,18 +47,18 @@
 <fieldset>
     <legend>Street Address</legend>
 <br>
-<input type="text" size="50" width="50"  maxlength="40" name="Street Address"  required="required" />
+<input type="text" size="50" width="50"  maxlength="40" name="Street Address"  required="required" id="street"/>
 </fieldset>
 <br>
 <fieldset>
 <legend>Suburb/town</legend>
 <br>
-<input type="text" size="50" width="50"  maxlength="40" name="Suburb/town" required="required"/>
+<input type="text" size="50" width="50"  maxlength="40" name="Suburb/town" required="required" id="suburb"/>
 </fieldset>
 <br>
 <br>
 <label>State: </label>
-<select name="State" required="required" >
+<select name="State" required="required" id="state" >
     <option value="">Please select your State</option>
     <option value="VIC">VIC </option>
     <option value="NSW">NSW</option>
@@ -76,17 +76,17 @@
     <br>
     <br>
     <br>
-    <input type="text" placeholder=" 2wn9hxh1" size="4" width="50" required="required" pattern="[0-9]+" name="PostCode"  required="required" />   <br>
+    <input type="text" placeholder=" 2wn9hxh1" size="4" width="50" required="required" pattern="[0-9]+" name="PostCode"  required="required" id="postcode"/>   <br>
     <br>
     <label>E-mail: </label>
     <br><br><br>
-    <input type="email" placeholder=" nguyenluongthien@gmail.com" name="E-mail"  required="required" />
+    <input type="email" placeholder=" nguyenluongthien@gmail.com" name="E-mail"  required="required" id="email"/>
     <br>
     <br>
     <div>  
     <label>Phone number</label>
     <br><br><br>
-    <input type="text" placeholder=" 0464398624t4" maxlength="12" pattern="[0-9 ]{8,12}" name="Phone number"  required="required" />
+    <input type="text" placeholder=" 0464398624t4" maxlength="12" pattern="[0-9 ]{8,12}" name="Phone number"  required="required" id="phone"/>
     <br>
     <br>
     <fieldset>
@@ -104,6 +104,7 @@
          name="Skills[]"
          rows="10"
          cols="30S"
+         id="other_skill"
          >
           
          </textarea>
