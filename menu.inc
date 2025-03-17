@@ -1,3 +1,4 @@
+<header>
 <div id="navbar" class="obj-width">
     <a href="index.html"><img class="logo" src="images/4tl-logo.png" alt="4TL Logo"></a>
     <!--responsive navbar-->
@@ -12,3 +13,4 @@
         <i class='bx bx-menu'></i>
     </label>
 </div>
+</header>
