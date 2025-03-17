@@ -2,10 +2,11 @@
 <html lang="en">
 <?php 
     include 'header.inc';
-    include 'menu.inc';
-    include 'footer.inc';
 ?>
 <body class="about-body">
+    <?php
+        include 'menu.inc';
+    ?>
     <article>
         <dl id="brief" class="about-us">
             <dt id="term1" class="about-us">About us</dt>
@@ -241,5 +242,8 @@
         <p id="phrasecontact">If you have any question, don't hesitate to contact us via this <b><i><a href="mailto:thanh140820522@gmail.com">email</a></i></b></p>
         </div>
     </article>
+    <?php
+    include 'footer.inc';
+    ?>
 </body>
     
