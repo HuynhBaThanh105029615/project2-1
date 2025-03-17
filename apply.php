@@ -12,7 +12,7 @@
     <p id="p1">Please Fill out the form Bellow to submit Your Job Application!</p>
     <br>
     <br>
-<form method="post" action=" https://mercury.swin.edu.au/it000000/formtest.php">
+<form method="post" action="process_eoi.php">
     <fieldset>
         <legend>Job reference number</legend>
     <br>
