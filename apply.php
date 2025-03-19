@@ -93,9 +93,9 @@
         <legend>Skill list</legend>
         <input type="checkbox" name="skills[]" value="Team Work"><i id="kynang"> Team Work </i>
         <br>
-        <input type="checkbox" name="skills[]"><i id="kynang" value="Marketing"> Marketing </i>
+        <input type="checkbox" name="skills[]" value="Marketing"><i id="kynang"> Marketing </i>
         <br>
-         <input type="checkbox" name="skills[]"><i id="kynang" value="Microsoft"> Microsoft </i><br>
+         <input type="checkbox" name="skills[]" value="Microsoft"><i id="kynang"> Microsoft </i><br>
          <br>
          <fieldset>
             <legend>Other skills: </legend>
