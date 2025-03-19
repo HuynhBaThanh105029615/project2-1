@@ -3,6 +3,7 @@
 <?php
     include 'header.inc'
 ?>
+<body>
     <!-- Header -->
     <?php
         include 'menu.inc'
@@ -16,5 +17,4 @@
    <?php
         include 'footer.inc'
     ?>
-
 </body>
