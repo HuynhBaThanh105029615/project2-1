@@ -3,7 +3,7 @@
 <?php
     include 'header.inc'
 ?>
-<body>
+<body class="enhancement-body">
     <!-- Header -->
     <?php
         include 'menu.inc'
