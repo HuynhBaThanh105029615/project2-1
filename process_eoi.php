@@ -13,7 +13,7 @@
     
     require_once "settings.php";
     $conn = @mysqli_connect($host, $user, $pwd, $sql_db); 
-
+    
     //prevent direct access by url
     if ($_SERVER["REQUEST_METHOD"] !== "POST") {
         header("Location: apply.php");
@@ -46,13 +46,16 @@
     // Server-side validation
     $errors = [];
     if (!preg_match("/^[a-zA-Z0-9]{5}$/", $job_ref)) $errors[] = "Invalid Job Reference Number.";
-    if (!preg_match("/^[a-zA-Z]{1,20}$/", $first_name)) $errors[] = "Invalid First Name.";
-    if (!preg_match("/^[a-zA-Z]{1,20}$/", $last_name)) $errors[] = "Invalid Last Name.";
+    if (!preg_match("/^[a-zA-Z ]{1,20}$/", $first_name)) $errors[] = "Invalid First Name.";
+    if (!preg_match("/^[a-zA-Z ]{1,20}$/", $last_name)) $errors[] = "Invalid Last Name.";
     if ($age < 15 || $age > 80) $errors[] = "Age must be between 15 and 80.";
+    if (!$gender) $errorsp[] = "You must select your Gender";
+    if (!preg_match("/^[a-zA-Z0-9 ]{1,40}$/", $street)) $errors[] = "Invalid Street Address.";
+    if (!preg_match("/^[a-zA-Z0-9 ]{1,40}$/", $suburb)) $errors[] = "Invalid Suburb/town.";
     if (!in_array($urstate, ["VIC", "NSW", "QLD", "NT", "WA", "SA", "TAS", "ACT"])) $errors[] = "Invalid State.";
     if (!preg_match("/^\d{4}$/", $postcode)) $errors[] = "Invalid Postcode.";
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = "Invalid Email.";
-    if (!preg_match("/^[0-9 ]{8,12}$/", $phone)) $errors[] = "Invalid Phone Number.";
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = "Invalid Email address.";
+    if (!preg_match("/^[0-9]{8,12}$/", $phone)) $errors[] = "Invalid Phone Number.";
     if (empty($skills) && empty($other_skills)) $errors[] = "You must enter some skills.";
 
     if (!empty($errors)) {
@@ -65,7 +68,9 @@
     //adding process
 
     $sql_table = "eoi";
-    $query = "INSERT INTO $sql_table (job_ref_num, first_name, last_name, street, suburb, urstate, postcode, email, phone, skills, other_skills, status) VALUES ('$job_ref', '$first_name', '$last_name', '$street',
+    $query1 = "ALTER TABLE eoi ADD dob DATE AFTER last_name";
+    $query2 = "ALTER TABLE eoi ADD gender VARCHAR(10) AFTER dob";
+    $query = "INSERT INTO $sql_table (job_ref_num, first_name, last_name, dob, gender, street, suburb, urstate, postcode, email, phone, skills, other_skills, status) VALUES ('$job_ref', '$first_name', '$last_name', '$dob', '$gender', '$street',
     '$suburb', '$urstate', '$postcode', '$email', '$phone', '$skills', '$other_skills', '$status')";
     $result = mysqli_query($conn, $query);
     if (!$result) {
@@ -73,7 +78,6 @@
     }   else {
         echo "<p class=\"ok\">Successfully added New member information</p>";
     }
-
     mysqli_close($conn);
 
 ?>

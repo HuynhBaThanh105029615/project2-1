@@ -12,7 +12,7 @@
     <p id="p1">Please Fill out the form Bellow to submit Your Job Application!</p>
     <br>
     <br>
-<form method="POST" action="process_eoi.php">
+<form method="POST" action="process_eoi.php" novalidate="novalidate">
     <fieldset>
         <legend>Job reference number</legend>
     <br>
