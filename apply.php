@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <?php
     include 'header.inc';
 ?>
@@ -39,9 +39,9 @@
     <fieldset>
         <legend>Gender:</legend>
         
-    <input type="radio"  required="required" name="gender"><i id="gioitinh"> Male </i> 
-    <input type="radio"  name="gender"> <i id="gioitinh"> Female </i>
-     <input type="radio" name="gender"><i id="gioitinh"> Others </i> <br>
+    <input type="radio"  required="required" name="gender" value="Male"><i id="gender"> Male </i> 
+    <input type="radio"  name="gender" value="Female"> <i id="gender"> Female </i>
+     <input type="radio" name="gender" value="Others"><i id="gender"> Others </i> <br>
 </fieldset>
 <br>
 <fieldset>
@@ -91,19 +91,19 @@
     <br>
     <fieldset>
         <legend>Skill list</legend>
-        <input type="checkbox" name="skills[]"><i id="kynang"> Team Work </i>
+        <input type="checkbox" name="skills[]" value="Team Work"><i id="kynang"> Team Work </i>
         <br>
-        <input type="checkbox" name="skills[]"><i id="kynang"> Marketing </i>
+        <input type="checkbox" name="skills[]"><i id="kynang" value="Marketing"> Marketing </i>
         <br>
-         <input type="checkbox" name="skills[]"><i id="kynang"> Microsoft </i><br>
+         <input type="checkbox" name="skills[]"><i id="kynang" value="Microsoft"> Microsoft </i><br>
          <br>
          <fieldset>
             <legend>Other skills: </legend>
          <br>
          <textarea 
-         name="other_skills[]"
+         name="other_skills"
          rows="10"
-         cols="30S"
+         cols="30"
          id="other_skills"
          >
           
