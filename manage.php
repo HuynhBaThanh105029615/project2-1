@@ -28,34 +28,34 @@
         echo "<p>Unable to connect to the db.</p>"; 
         }
     ?>
-    <main>
+        <br> <br> <br> <br> <br> <br>
     <table border="1">
-    <?php
-        echo "<tr>";
-        echo "<th>EOI Number</th> <th>Job Reference Number</th> <th>First Name</th> <th>Last Name</th> <th>DOB</th> <th>Gender</th> <th>Street Address</th> <th>Suburb/town</th> <th>State</th> <th>Postcode</th> <th>Email</th> <th>Phone</th> <th>Skills</th> <th>Other skills</th> <th>Status</th>" ;
-        echo "</tr>";
-        while ($row = mysqli_fetch_assoc($result)) {
+        <caption>Members information</caption>
+        <?php
             echo "<tr>";
-            echo "<td>". $row["EOInumber"] ."</td>";
-            echo "<td>". $row["job_ref_num"] ."</td>";
-            echo "<td>". $row["first_name"] ."</td>";    
-            echo "<td>". $row["last_name"] ."</td>";
-            echo "<td>". $row["dob"] ."</td>";
-            echo "<td>". $row["gender"] ."</td>";
-            echo "<td>". $row["street"] ."</td>";
-            echo "<td>". $row["suburb"] ."</td>";    
-            echo "<td>". $row["urstate"] ."</td>";
-            echo "<td>". $row["postcode"] ."</td>";
-            echo "<td>". $row["email"] ."</td>";
-            echo "<td>". $row["phone"] ."</td>";
-            echo "<td>". $row["skills"] ."</td>";    
-            echo "<td>". $row["other_skills"] ."</td>";
-            echo "<td>". $row["status"] ."</td>";
+            echo "<th>EOI Number</th> <th>Job Reference Number</th> <th>First Name</th> <th>Last Name</th> <th>DOB</th> <th>Gender</th> <th>Street Address</th> <th>Suburb/town</th> <th>State</th> <th>Postcode</th> <th>Email</th> <th>Phone</th> <th>Skills</th> <th>Other skills</th> <th>Status</th>" ;
             echo "</tr>";
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "<tr>";
+                echo "<td>". $row["EOInumber"] ."</td>";
+                echo "<td>". $row["job_ref_num"] ."</td>";
+                echo "<td>". $row["first_name"] ."</td>";    
+                echo "<td>". $row["last_name"] ."</td>";
+                echo "<td>". $row["dob"] ."</td>";
+                echo "<td>". $row["gender"] ."</td>";
+                echo "<td>". $row["street"] ."</td>";
+                echo "<td>". $row["suburb"] ."</td>";    
+                echo "<td>". $row["urstate"] ."</td>";
+                echo "<td>". $row["postcode"] ."</td>";
+                echo "<td>". $row["email"] ."</td>";
+                echo "<td>". $row["phone"] ."</td>";
+                echo "<td>". $row["skills"] ."</td>";    
+                echo "<td>". $row["other_skills"] ."</td>";
+                echo "<td>". $row["status"] ."</td>";
+                echo "</tr>";
             }
         ?>
-    </table>  
-    </main>
+    </table> 
     <?php   
         include 'footer.inc';
     ?>
