@@ -68,8 +68,6 @@
     //adding process
 
     $sql_table = "eoi";
-    $query1 = "ALTER TABLE eoi ADD dob DATE AFTER last_name";
-    $query2 = "ALTER TABLE eoi ADD gender VARCHAR(10) AFTER dob";
     $query = "INSERT INTO $sql_table (job_ref_num, first_name, last_name, dob, gender, street, suburb, urstate, postcode, email, phone, skills, other_skills, status) VALUES ('$job_ref', '$first_name', '$last_name', '$dob', '$gender', '$street',
     '$suburb', '$urstate', '$postcode', '$email', '$phone', '$skills', '$other_skills', '$status')";
     $result = mysqli_query($conn, $query);
