@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-    include 'header.inc'
+    include 'header.inc';
 ?>
 <body class="enhancement-body">
     <!-- Header -->
     <?php
-        include 'menu.inc'
+        include 'menu.inc';
     ?>
     <article>
         <h1>Enhancement:</h1>
@@ -15,6 +15,6 @@
     <img src="images/pic1.png" alt="picture of the responsive nav bar" class="imgen">
     <img src="images/pic2.png" alt="picture of the responsive nav bar 2" class="imgen">
    <?php
-        include 'footer.inc'
+        include 'footer.inc';
     ?>
 </body>

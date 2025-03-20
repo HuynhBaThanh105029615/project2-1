@@ -6,7 +6,7 @@
     ?>
 <body class="index-body">
     <?php
-        include 'menu.inc'
+        include 'menu.inc';
     ?>
     <div id="hero">
         <div id="glass">
@@ -59,6 +59,6 @@
         </div>
     </div>
     <?php
-        include 'footer.inc'
+        include 'footer.inc';
     ?>
 </body>

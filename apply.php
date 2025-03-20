@@ -164,7 +164,7 @@ cols="30"
 <br><br><br>
 </fieldset>
 <?php
-    include 'footer.inc'
+    include 'footer.inc';
     ?>
 </body>
 

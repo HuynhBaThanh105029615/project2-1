@@ -2,12 +2,12 @@
 <html lang="en">
 
 <?php
-    include 'header.inc'
+    include 'header.inc';
     ?>
 <body class="jobs-body">
     <!-- Header -->
     <?php 
-        include 'menu.inc'
+        include 'menu.inc';
         ?>
     <div class="container">
         <div class="search-container">
@@ -193,6 +193,6 @@
         </div>
     </div>
     <?php
-        include 'footer.inc'
+        include 'footer.inc';
     ?>
 </body>
