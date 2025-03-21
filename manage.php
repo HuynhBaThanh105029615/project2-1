@@ -62,15 +62,11 @@
         <form method="POST" action="manage.php">
             <label for="search_eoi_by_job_ref">Please enter a job reference number here:</label>
             <input type="text" name="search_eoi_by_job_ref"><br>
-            <h2>Search for eoi by name</h2>
-            <label for="search_eoi_by_name">Please enter a name here:</label>
-            <input type="text" name="search_eoi_by_name"><br>
             <input type="submit" value="Search">
         </form>
         <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $search_eoi_by_job_ref = htmlspecialchars(trim($_POST['search_eoi_by_job_ref']));
-                $search_eoi_by_name = htmlspecialchars(trim($_POST['search_eoi_by_name']));
                 require_once "settings.php";
                 $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
                 
@@ -123,7 +119,6 @@
                     } else {
                         echo "<p>There is no information to display.</p>";
                     }
-                    
                     mysqli_close($conn);
                 } else {
                     echo "<p>Database connection failed.</p>";
