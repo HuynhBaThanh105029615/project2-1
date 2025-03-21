@@ -43,6 +43,7 @@
             <dd>Ho Chi Minh</dd>
             <dt>Task:</dt>
             <dd>about.html</dd>
+            <dd>manage.php</dd>
             <dt>Skills:</dt>
             <dd>
                 <div class="progress-container">
@@ -65,6 +66,7 @@
             <dd>Thua Thien Hue</dd>
             <dt>Task:</dt>
             <dd>jobs.html</dd>
+            <dd>jobs.php</dd>
             <dt>Skills:</dt>
             <dd>
                 <div class="progress-container">
@@ -109,6 +111,7 @@
             <dd>Ho Chi Minh</dd>
             <dt>Task:</dt>
             <dd>index.html</dd>
+            <dd>process.php</dd>
             <dt>Skills:</dt>
             <dd>
                 <div class="progress-container">
