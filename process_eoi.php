@@ -35,7 +35,7 @@
     $phone = htmlspecialchars(trim($_POST['phone']));
     $skills = isset($_POST['skills']) ? implode(", ", $_POST['skills']) : ""; // Convert array to string
     $other_skills = htmlspecialchars(trim($_POST['other_skills']));
-    $status = "New";
+    $status = 1;
 
     //age calculation
     $dob_date = new DateTime($dob);
