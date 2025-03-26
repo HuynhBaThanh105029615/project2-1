@@ -6,9 +6,9 @@
 </head>
 <body>
     <?php 
-        $host="feenix-mariadb.swin.edu.au";
-        $user= "s105029615";
-        $pwd= "thanh105029615";
+        $host="";
+        $user= "root@localhost";
+        $pwd = "";
         $sql_db = "s105029615_db";
     ?>
 </body>
