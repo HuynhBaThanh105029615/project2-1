@@ -6,9 +6,9 @@
 </head>
 <body>
     <?php 
-        $host="";
-        $user= "root@localhost";
-        $pwd = "";
+        $host="localhost";
+        $user= "user";
+        $pwd = "123";
         $sql_db = "s105029615_db";
     ?>
 </body>
