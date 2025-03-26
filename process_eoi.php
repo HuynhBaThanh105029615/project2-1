@@ -75,8 +75,7 @@
         echo "<p class=\"wrong\">Something in wrong with ", $query, "</p>";
     }   else {
         echo "<p class=\"ok\">Successfully added New member information</p>";
-        echo "<p>You can see all the members's information <a href='manage.php'>here</a></p>";
-        echo "<p>You can back to the main page <a href='index.php'>here</a></p>";
+        echo "<p>You can back to the apply page <a href='apply.php'>here</a></p>";
     }
     mysqli_close($conn);
 
