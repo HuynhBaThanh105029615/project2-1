@@ -8,14 +8,14 @@
     include 'menu.inc';
 ?>
 <div class="manage-login-form">
-<form method="POST" action="manage_login.php" style="margin-top: 10%; margin-left: 1%; padding-bottom: 10%">
+<form method="POST" action="manage_login.php">
     <label for="username">Username:</label>
     <input type="text" name="username" required><br>
 
     <label for="password">Password:</label>
     <input type="password" name="password" required><br>
-
-    <input type="submit" value="Login" name="manageaccount">
+    
+    <input type="submit" value="Login" name="manageaccount" id="submitbutton">
 </form>
 </div>
 <?php
@@ -35,3 +35,4 @@
     include 'footer.inc';
 ?>
 </body>
+</html>
