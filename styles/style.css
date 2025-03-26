@@ -778,16 +778,16 @@ footer {
     margin-left: 200px;
 }
 .about-body .timetable {
-    position: relative;
+    display: grid;
     border: 2px solid #EFE3C2;
     background-color: #EFE3C2;
     border-radius: 20px;
     padding-left: 1%;
-    height: 550px;
-    margin-top: 30px;
-    margin-right: 64%;
+    height: 50%;
+    margin-top: 1%;
+    margin-right: 5%;
+    padding-bottom: 6%;
     width: 36%;
-    overflow-x: auto;
 }
 .about-body .contact-us {
     position: absolute;
@@ -800,7 +800,7 @@ footer {
     color:white;
     text-shadow: 2px 1.5px 5px #123524;
     text-align: center;
-    margin-top: 10px;
+    margin-top: .1%;
     padding-bottom: .5em;
 }
 .about-body .contact-us h2 {
@@ -1476,12 +1476,12 @@ footer {
 }
 
 /*manage login form*/
-.manage-login-body {
-    background-image: url('images/grey-white-abstract-background-geometry-shine-and-layer-element-for-presentation-design-suit-for-business-corporate-institution-party-festive-seminar-and-talks-vector.jpg');
-    background-size: cover; /* Makes the image cover the whole page */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
-}
+    .manage-login-body {
+        background-image: url("../images/white-simple-textured-design-background.jpg");
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat; 
+    }
 .manage-login-body .manage-login-form form {
 margin-top: 10%;
 margin-left: 40%;
@@ -1506,7 +1506,6 @@ border-color: #EFE3C2;
 .manage-login-body .manage-login-form form input {
     border-radius: 10px;
     text-align: center;
-    background-color: lightcyan;
 }
 .manage-login-body .manage-login-form form #submitbutton {
     background-color: #3E7B27;

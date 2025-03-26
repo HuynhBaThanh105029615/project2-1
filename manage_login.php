@@ -4,20 +4,20 @@
     include 'header.inc';
 ?>
 <body class="manage-login-body">
-<?php
-    include 'menu.inc';
-?>
-<div class="manage-login-form">
-<form method="POST" action="manage_login.php">
-    <label for="username">Username:</label>
-    <input type="text" name="username" required><br>
+    <?php
+        include 'menu.inc';
+    ?>
+    <div class="manage-login-form">
+    <form method="POST" action="manage_login.php">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br>
 
-    <label for="password">Password:</label>
-    <input type="password" name="password" required><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
     
-    <input type="submit" value="Login" name="manageaccount" id="submitbutton">
-</form>
-</div>
+        <input type="submit" value="Login" name="manageaccount" id="submitbutton">
+    </form>
+    </div>
 <?php
     if (isset($_POST['manageaccount'])) {
         $username = @htmlspecialchars(trim($_POST['username']));
@@ -30,9 +30,9 @@
             echo "Invalid login. <a href='login.php'>Try again</a>";
         }
     }
-?>
-<?php
-    include 'footer.inc';
-?>
+    ?>
+    <?php
+        include 'footer.inc';
+    ?>
 </body>
 </html>
