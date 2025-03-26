@@ -111,7 +111,7 @@
             <dd>Ho Chi Minh</dd>
             <dt>Task:</dt>
             <dd>index.html</dd>
-            <dd>process.php</dd>
+            <dd>process_eoi.php</dd>
             <dt>Skills:</dt>
             <dd>
                 <div class="progress-container">
