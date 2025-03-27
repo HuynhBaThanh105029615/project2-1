@@ -1516,3 +1516,27 @@ border-color: #EFE3C2;
     margin-top: 1em;
     width: 30%;
 }
+/*manage.php body*/
+.manage-body {
+    background-image: url('../images/white-simple-textured-design-background.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.manage-body .search_eoi_info {
+    margin-top: 10%;
+    margin-left: .5%;
+    margin-right: .5%;
+    border: 1px solid;
+    border-color: #EFE3C2;
+    background-color: #EFE3C2;
+    border-radius: 10px;
+    padding: .5%;
+}
+.manage-body .search_eoi_info h2 {
+   text-align: center;
+}
+.manage-body .search_eoi_info #member_info_form label {
+    
+    text-align: center;
+}

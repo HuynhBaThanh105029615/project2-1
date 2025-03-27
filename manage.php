@@ -9,67 +9,19 @@
     <?php 
         include 'menu.inc';
     ?>
-    <?php
-        require_once "settings.php";
-        $conn = @mysqli_connect($host, $user, $pwd, $sql_db); 
-
-        if ($conn) { 
-            $query = "SELECT * FROM eoi"; 
-            $result = mysqli_query($conn, $query); 
-
-        if ($result) { 
-        
-        } else {
-            echo "<p>There is no information to display</p>";
-        }
-
-        mysqli_close($conn); 
-        } else {
-        echo "<p>Unable to connect to the db.</p>"; 
-        }
-    ?>
-    <div class="phpmeminfo">
-    <table border="1" style="color: black; margin: 7%; background-color: #EFE3C2; text-align: center; border-radius: 20px; padding: 1em;" >
-        <caption style="color: black; font-size: 2em;">Members information</caption>
-        <?php
-            echo "<tr>";
-            echo "<th>EOI Number</th> <th>Job Reference Number</th> <th>First Name</th> <th>Last Name</th> <th>DOB</th> <th>Gender</th> <th>Street Address</th> <th>Suburb/town</th> <th>State</th> <th>Postcode</th> <th>Email</th> <th>Phone</th> <th>Skills</th> <th>Other skills</th> <th>Status</th>" ;
-            echo "</tr>";
-            while ($row = mysqli_fetch_assoc($result)) {
-                echo "<tr>";
-                echo "<td>". $row["EOInumber"] ."</td>";
-                echo "<td>". $row["job_ref_num"] ."</td>";
-                echo "<td>". $row["first_name"] ."</td>";    
-                echo "<td>". $row["last_name"] ."</td>";
-                echo "<td>". $row["dob"] ."</td>";
-                echo "<td>". $row["gender"] ."</td>";
-                echo "<td>". $row["street"] ."</td>";
-                echo "<td>". $row["suburb"] ."</td>";    
-                echo "<td>". $row["urstate"] ."</td>";
-                echo "<td>". $row["postcode"] ."</td>";
-                echo "<td>". $row["email"] ."</td>";
-                echo "<td>". $row["phone"] ."</td>";
-                echo "<td>". $row["skills"] ."</td>";    
-                echo "<td>". $row["other_skills"] ."</td>";
-                echo "<td>". $row["status"] ."</td>";
-                echo "</tr>";
-            }
-        ?>
-    </table> 
-    </div>
     <div class="search_eoi_info">
-    <h2>Search for EOIs by info</h2>
-    <form method="POST" action="manage.php">
+    <h2>Members Information</h2>
+    <form method="POST" action="manage.php" id="members_info_form">
         <label for="job_ref">Job reference number:</label>
-        <input type="text" name="job_ref"><br><br>
+        <input type="text" name="job_ref">
     
         <label for="first_name">First Name:</label>
-        <input type="text" name="first_name"><br><br>
+        <input type="text" name="first_name">
 
         <label for="last_name">Last Name:</label>
-        <input type="text" name="last_name"><br><br>
+        <input type="text" name="last_name">
 
-        <input type="submit" name="search_eoi" value="Search">
+        <input type="submit" name="search_eoi" value="Show">
     </form>
     <?php
         if (isset($_POST['search_eoi'])) {
@@ -103,13 +55,13 @@
                     echo "<table border='1'>
                             <tr>
                                 <th>EOI Number</th>
-                                <th>Job Ref Num</th>
+                                <th>Job Reference Number</th>
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>DOB</th>
                                 <th>Gender</th>
                                 <th>Street</th>
-                                <th>Suburb</th>
+                                <th>Suburb/town</th>
                                 <th>State</th>
                                 <th>Postcode</th>
                                 <th>Email</th>
@@ -149,6 +101,7 @@
             }
         }
     ?>
+    </div>
     <div class="delete_eoi_by_job_ref">
     <h2>Delete EOIs by Job Reference Number</h2>
     <form method="POST" action="manage.php">
