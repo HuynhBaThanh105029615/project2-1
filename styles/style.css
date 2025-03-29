@@ -1476,12 +1476,12 @@ footer {
 }
 
 /*manage login form*/
-    .manage-login-body {
-        background-image: url("../images/white-simple-textured-design-background.jpg");
-        background-size: cover;
-        background-position: center; 
-        background-repeat: no-repeat; 
-    }
+.manage-login-body {
+    background-image: url("../images/white-simple-textured-design-background.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
 .manage-login-body .manage-login-form form {
 margin-top: 10%;
 margin-left: 40%;
