@@ -6,15 +6,9 @@
 </head>
 <body>
     <?php 
-<<<<<<< Updated upstream
-        $host="localhost";
-        $user= "user";
-        $pwd = "123";
-=======
         $host="feenix-mariadb.swin.edu.au";
-        $user= "root@localhost";
-        $pwd = "";
->>>>>>> Stashed changes
+        $user= "s105029615";
+        $pwd = "thanh105029615";
         $sql_db = "s105029615_db";
     ?>
 </body>
