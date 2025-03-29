@@ -29,7 +29,7 @@
         }
     ?>
     <div class="jobsinfo">
-    <table border="1" style="color: black; margin: 7%; background-color: #EFE3C2; text-align: center; border-radius: 20px; padding: 1em;" >
+    <table border="1" style="color: black; margin: 7%; background-color: #EFE3C2; text-align: center; border-radius: 20px; padding: 1em; c" >
         <caption style="color: black; font-size: 2em;">Jobs List</caption>
         <?php
             echo "<tr>";
