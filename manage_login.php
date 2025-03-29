@@ -27,7 +27,7 @@
             header('Location: manage.php');
         }
         else {
-            echo "Invalid login. <a href='login.php'>Try again</a>";
+            echo "Invalid login, try again";
         }
     }
     ?>
