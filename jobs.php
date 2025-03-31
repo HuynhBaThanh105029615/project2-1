@@ -36,7 +36,7 @@
                 <option>30M - 50M</option>
                 <option>Above 50M</option>
             </select>
-            <button class="search-btn">Search</button>
+            <button class="search-btn" value="jobs-search">Search</button>
         </div>
 
         <div class="jobs-grid">
@@ -72,14 +72,14 @@
                             // Manual linking based on job title
                             $job_links = [
                                 "Sales Executive (International Market)" => "job_detail/SE(IM).html",
-                                "Sales Manager – HCM" => "job_detail/SM.html",
+                                "Sales Manager (HCM)" => "job_detail/SM.html",
                                 "Senior AI Engineer" => "job_detail/SAE.html",
                                 "Technical Project Manager" => "job_detail/TPM.html",
                                 "Senior Solutions Architect / Consultant" => "job_detail/SSA.html",
                                 "Intern Project Coordinator" => "job_detail/IPC.html",
                                 "Production Support" => "job_detail/PS.html",
                                 "Mid/Senior International Sales" => "job_detail/MSIS.html",
-                                "Bridge System Engineer (BrSE) - Japan" => "job_detail/BSE.html",
+                                "Bridge System Engineer (BrSE)" => "job_detail/BSE.html",
                             ];
                             
                             if (isset($job_links[$row["title"]])) {
