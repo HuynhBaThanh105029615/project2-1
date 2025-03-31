@@ -770,8 +770,9 @@ footer {
 .about-body .timetable table {
     text-align: center;
     padding-right: 1%;
-    width: 100%;
+    width: 80%;
     min-width: 10%;
+    font-size: smaller;
 }
 .about-body .timetable h2 {
     color:#123524 ;
@@ -779,6 +780,7 @@ footer {
 }
 .about-body .timetable {
     display: grid;
+    justify-content: left;
     border: 2px solid #EFE3C2;
     background-color: #EFE3C2;
     border-radius: 20px;
@@ -802,6 +804,7 @@ footer {
     text-align: center;
     margin-top: .1%;
     padding-bottom: .5em;
+    font-size: small;
 }
 .about-body .contact-us h2 {
     color:#EFE3C2;
@@ -1251,7 +1254,6 @@ footer {
 .jobs-body .view-more:hover::after {
     transform: translateX(3px);
 }
-
 /*This is a style for job details by Ho Thanh Phong */
 .job-details-body {
     font-family: 'Roboto', sans-serif;
