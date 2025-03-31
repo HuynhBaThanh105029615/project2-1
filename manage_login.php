@@ -8,29 +8,18 @@
         include 'menu.inc';
     ?>
     <div class="manage-login-form">
-    <form method="POST" action="manage_login.php">
-        <label for="username">Username:</label>
-        <input type="text" name="username" required><br>
+        <form method="POST" action="manage_login_process.php">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required><br>
 
-        <label for="password">Password:</label>
-        <input type="password" name="password" required><br>
-    
-        <input type="submit" value="Login" name="manageaccount" id="submitbutton">
-    </form>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required><br>
+            <div class="login-function-button">
+                <input type="submit" value="Login" name="manageaccount" id="submitbutton">
+                <p><a href="register.php" id="registerbutton">Register</a></p>
+            </div>
+        </form>
     </div>
-<?php
-    if (isset($_POST['manageaccount'])) {
-        $username = @htmlspecialchars(trim($_POST['username']));
-        $password = @htmlspecialchars(trim($_POST['password']));
-    
-        if ($username == "bathanh" && $password == "140805") {
-            header('Location: manage.php');
-        }
-        else {
-            echo "Invalid login, try again";
-        }
-    }
-    ?>
     <?php
         include 'footer.inc';
     ?>

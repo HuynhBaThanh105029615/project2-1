@@ -780,7 +780,7 @@ footer {
 }
 .about-body .timetable {
     display: grid;
-    justify-content: left;
+    justify-content: center;
     border: 2px solid #EFE3C2;
     background-color: #EFE3C2;
     border-radius: 20px;
@@ -1483,6 +1483,7 @@ footer {
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
+    padding-top: 4%;
 }
 .manage-login-body .manage-login-form form {
     margin-top: 10%;
@@ -1509,6 +1510,13 @@ footer {
     border-radius: 10px;
     text-align: center;
 }
+
+.manage-login-body .manage-login-form .login-function-button {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5em;
+}
+
 .manage-login-body .manage-login-form form #submitbutton {
     background-color: #3E7B27;
     color: white;
@@ -1518,6 +1526,19 @@ footer {
     margin-top: 1em;
     width: 30%;
 }
+
+.manage-login-body .manage-login-form form #registerbutton {
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+    padding: .5em;
+    border-radius: 20px;
+    margin-top: 3em;
+    width: 40%;
+    text-decoration: none;
+    align-items: center;
+}
+
 /*manage.php body*/
 .manage-body {
     background-image: url('../images/white-simple-textured-design-background.jpg');
