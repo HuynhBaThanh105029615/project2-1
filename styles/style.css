@@ -1533,10 +1533,8 @@ footer {
     font-weight: bold;
     padding: .5em;
     border-radius: 20px;
-    margin-top: 3em;
+    margin-top: 1em;
     width: 40%;
-    text-decoration: none;
-    align-items: center;
 }
 
 /*manage.php body*/

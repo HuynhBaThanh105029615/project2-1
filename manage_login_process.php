@@ -9,11 +9,6 @@
 
 </head>
 <body>
-<?php 
-    if(isset($_POST['registerbutton'])) {
-        header('Location: register.php');
-    }
-?>
 <?php
     if (isset($_POST['manageaccount'])) {
         $username = @htmlspecialchars(trim($_POST['username']));

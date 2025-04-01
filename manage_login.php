@@ -16,7 +16,7 @@
             <input type="password" name="password" required><br>
             <div class="login-function-button">
                 <input type="submit" value="Login" name="manageaccount" id="submitbutton">
-                <p><a href="register.php" id="registerbutton">Register</a></p>
+                <input type="button" value="Register" id="registerbutton" onclick="window.location.href='register.php';">
             </div>
         </form>
     </div>
