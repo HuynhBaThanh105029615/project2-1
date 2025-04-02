@@ -379,7 +379,7 @@ footer {
         opacity: 1; 
         animation: none; 
     }
-    .search-container {
+    .jobsform {
         grid-template-columns: 1fr;
     }
 
@@ -1085,9 +1085,9 @@ footer {
     padding-top: 100px; 
 }
 
-.jobs-body .search-container {
+.jobs-body .jobsform {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr auto;
+    grid-template-columns: 2fr 1fr auto;
     gap: 1rem;
     margin-bottom: 2rem;
     animation: slideDown 0.5s ease-out;
@@ -1104,11 +1104,11 @@ footer {
     }
 }
 
-.jobs-body .search-box {
+.jobs-body .jobsform .search-box {
     position: relative;
 }
 
-.jobs-body .search-box input {
+.jobs-body .jobsform .search-box input {
     width: 100%;
     padding: 0.8rem 1rem;
     padding-right: 2.5rem;
@@ -1117,13 +1117,13 @@ footer {
     transition: all 0.3s ease;
 }
 
-.jobs-body .search-box input:focus {
+.jobs-body .jobsform .search-box input:focus {
     outline: none;
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
 
-.jobs-body .search-box::after {
+.jobs-body .jobsform .search-box::after {
     content: '🔍';
     position: absolute;
     right: 1rem;

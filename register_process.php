@@ -41,8 +41,8 @@
 
     //adding process
 
-    $sql_table = "manage";
-    $query = "INSERT INTO $sql_table (fullname, username, password) VALUES ('$fullname','$username','$password')";
+    $sql_table = "account";
+    $query = "INSERT INTO $sql_table (fullname, username, password,role) VALUES ('$fullname','$username','$password',1)";
     $result = mysqli_query($conn, $query);
     if (!$result) {
         echo "<p class=\"wrong\">Something in wrong with ", $query, "</p>";

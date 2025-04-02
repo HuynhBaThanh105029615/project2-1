@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Process EOI</title>
+<title>Login</title>
 
 <meta charset="utf-8" />
 <meta name="description" content="project2"  />
-<meta name="keywords" content="process eoi" />
+<meta name="keywords" content="login" />
 
 </head>
 <body>
@@ -22,7 +22,7 @@ if (!$conn) {
 
 // Get user input
 $username = isset($_POST['username']) ? trim($_POST['username']) : '';
-$password = isset($_POST['password']) ? trim($_POST['password']) : '';
+$password = isset($_POST['password']) ? (trim($_POST['password'])) : '';
 
 // Validate inputs
 if (empty($username) || empty($password)) {
@@ -30,7 +30,7 @@ if (empty($username) || empty($password)) {
 }
 
 // Prepare SQL query
-$query = "SELECT * FROM manage WHERE username = ?";
+$query = "SELECT * FROM account WHERE username = ?";
 
 $stmt = mysqli_prepare($conn, $query);
 

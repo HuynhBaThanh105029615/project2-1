@@ -16,7 +16,7 @@
     <fieldset>
         <legend>Job reference number</legend>
     <br>
-    <input type="text" placeholder="J97" maxlength="5" pattern="[a-zA-Z0-9]+" required="required" name="job_ref" id="job_ref" >
+    <input type="text" placeholder="00001" maxlength="5" pattern="[a-zA-Z0-9]+" required="required" name="job_ref" id="job_ref" >
 </fieldset><br>
     <br>
     <fieldset>
@@ -76,7 +76,7 @@
     <br>
     <br>
     <br>
-    <input type="text" placeholder=" 2wn9hxh1" size="4" width="50" required="required" pattern="[0-9]+" name="postcode"  required="required" id="postcode"/>   <br>
+    <input type="text" placeholder=" 2025" size="4" width="50" required="required" pattern="[0-9]+" name="postcode"  required="required" id="postcode"/>   <br>
     <br>
     <label>E-mail: </label>
     <br><br><br>
@@ -86,7 +86,7 @@
     <div>  
     <label>Phone number</label>
     <br><br><br>
-    <input type="text" placeholder=" 0464398624t4" maxlength="12" pattern="[0-9 ]{8,12}" name="phone"  required="required" id="phone"/>
+    <input type="text" placeholder=" 0931627592" maxlength="12" pattern="[0-9 ]{8,12}" name="phone"  required="required" id="phone"/>
     <br>
     <br>
     <fieldset>
@@ -111,49 +111,6 @@
         </fieldset>
     </fieldset>
 </div>  
-<br>
-<br>
-<div>
-    <label>Applied Position: </label>
-    <select name="Applied Position">
-        <option value="">Please select your Position you want to apply</option>
-        <option value="Web developer">Web developer </option>
-        <option value="DEV">DEV</option>
-        <option value="DES">DES</option>
-        <option value="Full stacks">Full stacks</option>
-        <option value="FE">FE</option>
-        <option value="Be">Be</option>
-    </select>
-    </div>
-    <br>
-    <br>
-<div>
-    <label>Earliest Possible Start Date</label><br>
-    <br>
-    <input type="date" placeholder=" 07/12/2005"  required="required" /> 
-</div>
-<br>
-<br>
-<h2>Preferred Interview Date</h2><br>
-<div>
-<h2>Cover Letter</h2>
-<textarea
- width="100" type="text"
-name="Cover Letter"
-rows="10"
-cols="30"
->
- </textarea>
-</div><br>
-<label><b>Upload Resume</b></label><br>
-<br>
-<input type="file" name="file Upload"/> 
-<br>
-<br>
-<label><b>Any Other Documents to Upload</b></label><br>
-<br>
-<input type="file" name="Any other Documents to Upload" />
-<br>
 <br>
 <br>
 <div class="form-group">
