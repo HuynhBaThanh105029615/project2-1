@@ -1640,3 +1640,36 @@ footer {
 .manage-body .members_info_table td {
     border: .5px dashed black;
 }
+
+/* register body */
+
+.register-body {
+    background-image: url('../images/white-simple-textured-design-background.jpg');
+}
+
+.register-body .registerform {
+    margin: 1%;
+    margin-top: 10%;
+    background-color: #EFE3C2;
+    border-radius: 20px;
+    padding: 1%
+}
+
+.register-body .registerform form {
+    display: grid;
+    row-gap: 1%;
+}
+
+.register-body .registerform form label {
+    color:#3E7B27;
+}
+
+#createaccountbutton {
+    margin-top: 1%;
+    justify-content: center;
+    width: 5%;
+    background-color: darkorange;
+    color: white;
+    border-radius: 20px;
+    margin-left: 45%;
+}
