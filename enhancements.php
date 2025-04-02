@@ -14,9 +14,9 @@
     </article>
     <img src="images/pic1.png" alt="picture of the responsive nav bar" class="imgen">
     <img src="images/pic2.png" alt="picture of the responsive nav bar 2" class="imgen">
-    <?php
-        include 'phpenhancements.php';
-    ?>
+    <div class="linktophpenhance">
+        <a href="phpenhancements.php">PHP Enhancements</a>
+    </div>
    <?php
         include 'footer.inc';
     ?>

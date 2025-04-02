@@ -1050,6 +1050,22 @@ footer {
     border-radius: 20px;
   }
 
+  .enhancement-body .linktophpenhance {
+    border-radius: 20px;
+    background-color: #3E7B27;
+    color: white;
+    text-decoration: none;
+    width: 11%;
+    padding: 1%;
+    margin-left: 45%;
+  }
+
+  .enhancement-body .linktophpenhance a {
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+  }
+
 /*This is a style for jobs by Ho Thanh Phong*/
 :root {
     --primary: #0066CC;
@@ -1672,4 +1688,41 @@ footer {
     color: white;
     border-radius: 20px;
     margin-left: 45%;
+}
+
+/*php enhancement*/
+
+.phpenhancements-body {
+    background-image: url('../images/white-simple-textured-design-background.jpg');
+}
+
+.phpenhancements-body .phpenhance1 {
+    margin-top: 10%;
+    padding: 2%;
+    border-radius: 20px;
+    margin-bottom: 4%;
+}
+
+.phpenhancements-body .phpenhance1 p {
+    font-size: small;
+    font-weight: lighter;
+}
+
+.phpenhancements-body .phpenhance1 h2 {
+    justify-content: center;
+}
+
+
+.phpenhancements-body .phpenhance2 {
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.phpenhancements-body .phpenhance2 p {
+    font-size: small;
+    font-weight: lighter;
+}
+
+.phpenhancements-body .phpenhance2 h2 {
+    justify-content: center;
 }
