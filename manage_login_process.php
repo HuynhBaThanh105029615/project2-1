@@ -47,7 +47,7 @@ if (!$result) {
 }
 
 if ($row = mysqli_fetch_assoc($result)) {
-    // Check password (Plain text comparison - not recommended)
+    // Check password
     if ($password === $row['password']) {
         $_SESSION['username'] = $row['username'];
         header("Location: manage.php");
