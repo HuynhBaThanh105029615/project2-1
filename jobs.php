@@ -9,11 +9,8 @@
     <?php 
         include 'menu.inc';
     ?>
-    <?php 
-        include 'menu.inc';
-    ?>
 
-<div class="container">
+    <div class="container">
         <div class="search-container">
             <div class="search-box">
                 <input type="text" placeholder="Search">
