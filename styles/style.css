@@ -1737,3 +1737,39 @@ footer {
     border-radius: 20px;
     padding: .5%;
 }
+
+/*Enhancecon*/
+
+.enhancement-con-body {
+    background-image: url('../images/white-simple-textured-design-background.jpg');
+}
+
+.enhancement-con-body .enhanceimg {
+    display: flex;
+    justify-content: center;
+    column-gap: 22%;
+    padding: 1%;
+    margin-top: 10%;
+}
+
+.enhancement-con-body .enhanceimg img {
+    width: 150px;
+}
+
+.enhancement-con-body .linkto {
+    display: flex;
+    justify-content: center;
+    column-gap: 20%;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.enhancement-con-body .linkto a {
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #3E7B27;
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+}
