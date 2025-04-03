@@ -75,7 +75,7 @@ header.scrolled {
     animation: fadeInUp 0.8s forwards;
 }
 
-#menu {
+.menu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -83,17 +83,17 @@ header.scrolled {
     box-shadow: none;
 }
 
-#menu li {
+.menu li {
     opacity: 0;
     animation: fadeInUp 0.8s forwards;
 }
 
-#menu li:nth-child(1) { animation-delay: 0.1s; }
-#menu li:nth-child(2) { animation-delay: 0.2s; }
-#menu li:nth-child(3) { animation-delay: 0.3s; }
-#menu li:nth-child(4) { animation-delay: 0.4s; }
+.menu li:nth-child(1) { animation-delay: 0.1s; }
+.menu li:nth-child(2) { animation-delay: 0.2s; }
+.menu li:nth-child(3) { animation-delay: 0.3s; }
+.menu li:nth-child(4) { animation-delay: 0.4s; }
 
-#menu li a {
+.menu li a {
     color: #fff;
     text-decoration: none;
     margin-left: 40px;
@@ -103,7 +103,7 @@ header.scrolled {
     transition: color 0.3s;
 }
 
-#menu li a::after {
+.menu li a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -115,7 +115,7 @@ header.scrolled {
     transition: transform 0.3s;
 }
 
-#menu li a:hover::after {
+.menu li a:hover::after {
     transform: scaleX(1);
 }
 
@@ -329,7 +329,7 @@ footer {
         display: block;
     }
 
-    #menu {
+    .menu {
         background-color: #fff;
         display: block;
         width: 250px;
@@ -345,22 +345,22 @@ footer {
         z-index: 999; 
     }
 
-    #menu li {
+    .menu li {
         padding: 1rem;
         animation: none;
         opacity: 1;
     }
 
-    #menu li a {
+    .menu li a {
         color: #1f3e5d;
         margin-left: 20px;
     }
 
-    #menu li a::after {
+    .menu li a::after {
         background-color: #1f3e5d;
     }
 
-    .nav-toggle:checked ~ #menu {
+    .nav-toggle:checked ~ .menu {
         right: 10px;
         opacity: 1;
     }
@@ -1494,14 +1494,14 @@ footer {
 }
 
 /*manage login form*/
-.manage-login-body {
+.login-body {
     background-image: url("../images/white-simple-textured-design-background.jpg");
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
     padding-top: 4%;
 }
-.manage-login-body .manage-login-form form {
+.login-body .login-form form {
     margin-top: 10%;
     margin-left: 40%;
     margin-right: 1%;
@@ -1517,23 +1517,23 @@ footer {
     border-color: #EFE3C2;
 }
 
-.manage-login-body .manage-login-form form label {
+.login-body .login-form form label {
     color: #123524;
     font-size: larger;
     font-weight: bold;
 }
-.manage-login-body .manage-login-form form input {
+.login-body .login-form form input {
     border-radius: 10px;
     text-align: center;
 }
 
-.manage-login-body .manage-login-form .login-function-button {
+.login-body .login-form .login-function-button {
     display: flex;
     justify-content: space-between;
     column-gap: 5em;
 }
 
-.manage-login-body .manage-login-form form #submitbutton {
+.login-body .login-form form #submitbutton {
     background-color: #3E7B27;
     color: white;
     font-weight: bold;
@@ -1543,7 +1543,7 @@ footer {
     width: 30%;
 }
 
-.manage-login-body .manage-login-form form #registerbutton {
+.login-body .login-form form #registerbutton {
     background-color: darkorange;
     color: white;
     font-weight: bold;
@@ -1725,4 +1725,15 @@ footer {
 
 .phpenhancements-body .phpenhance2 h2 {
     justify-content: center;
+}
+
+#loginout {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: larger;
+    font-family: "Poppins", sans-serif;
+    background-color: navy;
+    border-radius: 20px;
+    padding: .5%;
 }

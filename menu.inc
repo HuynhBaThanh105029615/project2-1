@@ -3,13 +3,30 @@
     <a href="index.php"><img class="logo" src="images/4tl-logo.png" alt="4TL Logo"></a>
     <!--responsive navbar-->
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <ul id="menu">
-        <li><a href="manage_login.php">Manage</a></li>
-        <li><a href="jobs.php">Jobs</a></li>
-        <li><a href="about.php">About</a></li>
-        <li><a href="apply.php">Apply</a></li>
-        <li><a href="enhancements.php">Enhancements</a></li>
-    </ul>
+        <?php
+        session_start();
+        if (isset($_SESSION["role"])) {
+            if ($_SESSION["role"] === "manager") {
+                echo '<ul class="menu">';
+                    echo '<li><a href="manage.php">Manage</a></li>';
+                    echo '<li><a href="jobs.php">Jobs</a></li>';
+                    echo '<li><a href="about.php">About</a></li>';
+                    echo '<li><a href="apply.php">Apply</a></li>';
+                    echo '<li><a href="enhancements.php">Enhancements</a></li>';
+                echo '</ul>';
+            } else {
+                echo '<ul class="menu">';
+                    echo '<li><a href="jobs.php">Jobs</a></li>';
+                    echo '<li><a href="about.php">About</a></li>';
+                    echo '<li><a href="apply.php">Apply</a></li>';
+                    echo '<li><a href="enhancements.php">Enhancements</a></li>';
+                echo '</ul>';
+            }
+            echo '<a href="logout.php" id="loginout">Logout</a>';
+        } else {
+            echo '<a href="login.php" id="loginout">Login</a>';
+        }
+        ?>
     <label for="nav-toggle" class="nav-toggle-label">
         <i class='bx bx-menu'></i>
     </label>

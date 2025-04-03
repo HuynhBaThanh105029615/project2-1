@@ -22,13 +22,11 @@
     
 
     //Sanitize and validate input
-    $fullname = htmlspecialchars(trim($_POST['fullname']));
     $username = htmlspecialchars(trim($_POST['username']));
     $password = htmlspecialchars(trim($_POST['password']));
 
     // Server-side validation
     $errors = [];
-    if (!preg_match("/^[a-zA-Z0-9 ]{1,50}$/", $fullname)) $errors[] = "Invalid Full Name.";
     if (!preg_match("/^[a-zA-Z0-9 ]{1,50}$/", $username)) $errors[] = "Invalid Username.";
     if (!preg_match("/^[a-zA-Z0-9 ]{1,50}$/", $password)) $errors[] = "Invalid Password.";
 
@@ -41,14 +39,14 @@
 
     //adding process
 
-    $sql_table = "account";
-    $query = "INSERT INTO $sql_table (fullname, username, password,role) VALUES ('$fullname','$username','$password',1)";
+    $sql_table = "users";
+    $query = "INSERT INTO $sql_table (id, username, password,role) VALUES (NULL, '$username','$password',1)";
     $result = mysqli_query($conn, $query);
     if (!$result) {
         echo "<p class=\"wrong\">Something in wrong with ", $query, "</p>";
     }   else {
         echo "<p class=\"ok\">Successfully added new account</p>";
-        echo "<p>You can back to the login <a href='manage_login.php'>here</a></p>";
+        echo "<p>You can back to the login <a href='login.php'>here</a></p>";
     }
     mysqli_close($conn);
 
