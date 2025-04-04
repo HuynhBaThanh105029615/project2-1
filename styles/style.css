@@ -1668,12 +1668,16 @@ footer {
     margin-top: 10%;
     background-color: #EFE3C2;
     border-radius: 20px;
-    padding: 1%
+    padding: 1%;
+    padding-bottom: 5%;
+    width: 20%;
+    margin-bottom: 10%;
+    margin-left: 40%;
 }
 
 .register-body .registerform form {
     display: grid;
-    row-gap: 1%;
+    row-gap: 10%;
 }
 
 .register-body .registerform form label {
@@ -1683,11 +1687,11 @@ footer {
 #createaccountbutton {
     margin-top: 1%;
     justify-content: center;
-    width: 5%;
+    width: 25%;
     background-color: darkorange;
     color: white;
     border-radius: 20px;
-    margin-left: 45%;
+    margin-left: 35%;
 }
 
 /*php enhancement*/
@@ -1697,34 +1701,88 @@ footer {
 }
 
 .phpenhancements-body .phpenhance1 {
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 2%;
     border-radius: 20px;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
+    background-color: #EFE3C2;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .phpenhancements-body .phpenhance1 p {
-    font-size: small;
+    font-size: medium;
     font-weight: lighter;
+    color:black;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .phpenhancements-body .phpenhance1 h2 {
-    justify-content: center;
+    text-align: center;
+    color: #3E7B27;
 }
 
+.phpenhancements-body .phpenhance1 .imgenphp {
+    width: 30%;
+    background-color: lightgreen;
+    padding: 1%;
+    border-radius: 20px;
+    margin-left: 1%;
+}
 
 .phpenhancements-body .phpenhance2 {
     padding: 2%;
+    margin: 4%;
+    margin-top: 0%;
     border-radius: 20px;
+    background-color: #EFE3C2;
 }
 
 .phpenhancements-body .phpenhance2 p {
-    font-size: small;
+    font-size: medium;
     font-weight: lighter;
+    color: black;
 }
 
 .phpenhancements-body .phpenhance2 h2 {
-    justify-content: center;
+    text-align: center;
+    color:#3E7B27;
+}
+
+.phpenhancements-body .phpenhance2 dt {
+    font-size: medium;
+}
+
+.phpenhancements-body .phpenhance2 .imgenphp2 {
+    width: 60%;
+}
+
+.phpenhancements-body .phpenhance3 {
+    padding: 2%;
+    margin-right: 4%;
+    margin-left: 4%;
+    border-radius: 20px;
+    background-color: #EFE3C2;
+}
+
+.phpenhancements-body .phpenhance3 p {
+    font-size: medium;
+    color:black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.phpenhancements-body .phpenhance3 h2 {
+    text-align: center;
+    color: #3E7B27;
+}
+
+.phpenhancements-body .phpenhance3 .imgenphp3 {
+    margin-left: 13%;
+    background-color: #3E7B27;
+    border-radius: 20px;
+    padding: 1%;
 }
 
 #loginout {

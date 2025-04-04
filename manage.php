@@ -9,6 +9,13 @@
     <?php 
         include 'menu.inc';
     ?>
+    <?php
+        session_start();
+        if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "manager") {
+            header("Location: index.php"); // Redirect unauthorized users
+            exit();
+        }
+    ?>
     <div class="search_eoi_info">
         <form method="POST" action="manage.php" id="search_eoi_info_form">
             <h2>Seacrh EOI</h2>
